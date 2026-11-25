@@ -1,11 +1,10 @@
-==================================================
-PROJETO: SISTEMA DE FOLHA DE PAGAMENTO
-==================================================
 
-OBJETIVO
+# PROJETO: SISTEMA DE FOLHA DE PAGAMENTO
+
+## OBJETIVO
 Sistema para cadastrar funcionários e calcular salário.
 
-REGRAS
+## REGRAS
 - Salário base de todos: R$ 2.000,00
 - 3 tipos de funcionários:
   1. Padrão: ganha só o salário base
@@ -18,22 +17,21 @@ REGRAS
 - Nenhum valor pode ser negativo
 - Dados salvos em lista
 
-==================================================
-1. FLUXOGRAMA
-==================================================
+## 1. FLUXOGRAMA
+
 
 --- MENU PRINCIPAL ---
 
-INICIO
+ INICIO
   ↓
-MOSTRAR OPÇÕES:
+ MOSTRAR OPÇÕES:
   1 - Cadastrar Funcionário Padrão
   2 - Cadastrar Funcionário Comissionado
   3 - Cadastrar Funcionário Produção
   4 - Listar Todos os Funcionários
   0 - Sair do Sistema
   ↓
-LER OPÇÃO
+ LER OPÇÃO
   ↓
 ┌───┬───┬───┬───┬───┐
 │ 1 │ 2 │ 3 │ 4 │ 0 │
@@ -123,28 +121,24 @@ MOSTRA O TOTAL DE TODOS OS SALÁRIOS
   ↓
 VOLTA PRO MENU
 
-==================================================
-2. VALIDAÇÕES FEITAS
-==================================================
+# 2. VALIDAÇÕES FEITAS
 
-✔ NÃO DEIXA USAR NÚMERO NEGATIVO
+ ✔ NÃO DEIXA USAR NÚMERO NEGATIVO:
 Se digitar valor menor que zero, mostra aviso e pede para digitar certo.
 
-✔ SÓ ACEITA NÚMERO QUANDO DEVE SER NÚMERO
+ ✔ SÓ ACEITA NÚMERO QUANDO DEVE SER NÚMERO:
 Se digitar letra no lugar de número, avisa e pede de novo.
 
-✔ ACEITA VÍRGULA OU PONTO
+ ✔ ACEITA VÍRGULA OU PONTO:
 Pode digitar R$ 1500,50 ou R$ 1500.50 que o sistema entende os dois.
 
-✔ SÓ ACEITA OPÇÕES DO MENU
+ ✔ SÓ ACEITA OPÇÕES DO MENU:
 Só deixa escolher de 0 a 4, qualquer outro número é erro.
 
-✔ ACEITA DEIXAR CAMPO VAZIO
+ ✔ ACEITA DEIXAR CAMPO VAZIO:
 Aperta ENTER e segue normalmente, não dá erro.
 
-==================================================
-3. COMO OS DADOS SÃO GUARDADOS
-==================================================
+## 3. COMO OS DADOS SÃO GUARDADOS
 
 Usamos uma lista (ArrayList) para guardar todos os funcionários.
 Assim pode cadastrar quantos precisar, sem limite.
@@ -155,9 +149,7 @@ Assim pode cadastrar quantos precisar, sem limite.
 • Campos vazios ficam como NULL
 • Nos cálculos, valores nulos valem 0
 
-==================================================
-4. ARQUIVOS DO PROJETO
-==================================================
+## 4. ARQUIVOS DO PROJETO
 
 Funcionario.java
 - Classe geral e os 3 tipos de funcionário

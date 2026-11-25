@@ -11,7 +11,7 @@ REGRAS
   1. Padrão: ganha só o salário base
   2. Comissionado: salário base + (vendas * percentual / 100)
   3. Produção: salário base + (valor por peça * quantidade feita)
-- ✅ TODOS OS CAMPOS PODEM SER DEIXADOS VAZIOS
+- TODOS OS CAMPOS PODEM SER DEIXADOS VAZIOS
   • Guarda como nulo
   • Mostra "Não informado"
   • Nos cálculos, vale 0
